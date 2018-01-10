@@ -161,12 +161,6 @@ USE_OPENGL_RENDERER := true
 # RIL
 TARGET_RIL_VARIANT := caf
 
-# SELinux
-include device/qcom/sepolicy/sepolicy.mk
-include device/qcom/sepolicy/legacy-sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
-
 # Tap-to-Wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/bus/i2c/devices/i2c-5/5-0038/dclick_mode"
 
